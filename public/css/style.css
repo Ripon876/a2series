@@ -17,7 +17,11 @@ input{
 	color: #0e141e !important;
 }
 
-
+.center{
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+}
 
 /*=============================================================*/
 

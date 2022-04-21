@@ -46,38 +46,48 @@
 
 
 
+/*========================= service item 4*/
 
+.serviceInfo h2{
+	font-size: 45px;
+}
+.serviceInfo p{
+	font-size: 23px;
+}
 
-/*
 
 @media (max-width: 992px) { 
 
 	.services{
-		height: 985px;
-		background: red ;
+		/*height: 985px;*/
+		/*background: red ;*/
 	}
-	.serviceRow{
-    grid-template-columns: 45% 45%;
+.serviceInfo h2{
+	font-size: 35px;
 }
+.serviceInfo p{
+	font-size: 18px;
+}
+
 
 
 }
 @media (max-width: 768px) { 
 
 	.services{
-		height: 1540px;
-		background: blue;
+		/*height: 1540px;*/
+		/*background: blue;*/
 	}
-	.serviceRow{
-    grid-template-columns: 70%;
-}
+ .serviceInfo{
+ 	position: relative;
+ }
 
 }
 @media (max-width: 460px) { 
 
 	.services{
-		height: 1655px;
-		background: orange;
+		/*height: 1655px;*/
+		/*background: orange;*/
 	}
 	.serviceRow{
     grid-template-columns: 70%;
@@ -88,8 +98,8 @@
 @media (max-width: 400px) { 
 
 	.services{
-		height: 1750px;
-		background: yellow;
+		/*height: 1750px;*/
+		/*background: yellow;*/
 	}
 	.serviceRow{
     grid-template-columns: 70%;
@@ -99,11 +109,9 @@
 @media (max-width: 355px) { 
 
 	.services{
-		height: 2250px;
-		background: green;
+		/*height: 2250px;*/
+		/*background: green;*/
 	}
-	.serviceRow{
-    grid-template-columns: 70%;
-}
+	
 
-}*/
+}

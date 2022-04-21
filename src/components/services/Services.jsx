@@ -1,8 +1,10 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import ServiceItem from './ServiceItem';
+/*import ServiceItem from './ServiceItem';
 import ServiceItem2 from './ServiceItem2';
+import ServiceItem3 from './ServiceItem3';*/
 import ServiceItem3 from './ServiceItem3';
+import ServiceItem4 from './ServiceItem4';
 import './Services.css';
 
 
@@ -28,13 +30,28 @@ function Services({home}) {
 				<ServiceItem3 title="Web Application"  imgSrc="web-app.png"      para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nullalibero malesuada feugiat. Curabitur non nulla." img="" />
 				<ServiceItem3 title="Web Development"  imgSrc="s1.png"      para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nullalibero malesuada feugiat. Curabitur non nulla." img="" />
 
-
-
 					</div>
 		{/*			{home && <div className="extra text-end">
 					<Link to="/services/" className="text-black text-decoration-none">See More</Link>
 					</div> }	*/}
 					
+
+
+
+              <ServiceItem4 title="Mobile App Development" imgSrc="mobile.svg" />
+              <ServiceItem4 title="Software Development" scf imgSrc="pc.svg" />
+              <ServiceItem4 title="Digital Marketing" imgSrc="marketing.svg" />
+
+
+
+
+
+
+
+
+
+
+
 				</div>	
 			</div>
 		</div>

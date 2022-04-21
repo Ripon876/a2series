@@ -1,0 +1,11 @@
+.careerDetail{
+	padding: 100px 0 70px;
+	background: #f5f7fb;
+}
+.openingHeader h1 {
+	border-left: 10px solid #212529;
+	padding-left: 10px;
+}
+.openingHeader {
+	font-weight: bold;
+}

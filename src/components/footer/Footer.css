@@ -1,0 +1,49 @@
+
+.footer-container {
+  padding: 5rem 0 0;
+  background-color: #0e141e;
+  color: #777; 
+}
+
+
+.footer-container .footer-site-logo {
+  font-size: 1.5rem;
+  color: #fff; 
+  text-decoration: none;
+}
+.footer-container .nav-links li {
+   margin-bottom: 10px; 
+}
+.footer-container .nav-links li a {
+  color: #ffffffde; 
+  text-decoration: none;
+}
+.footer-container .nav-links li a:hover {
+  color: #fff; 
+}
+
+.footer-container .btn.btn-tertiary {
+  background-color: #e42c64;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px; 
+}
+
+.footer-container .social li {
+  display: inline-block; 
+}
+
+.footer-container .social li a {
+  color: gray;
+  padding: 7px; 
+}
+
+.footer-container .social li a:hover {
+  color: #fff; 
+}
+
+.footer-container .copyright {
+  border-top: 1px solid #404040; 
+}
+

@@ -1,0 +1,138 @@
+body{
+	background-color: #f5f7fb !important;
+	overflow-x: hidden;
+}
+input{
+	border-radius: 50px !important;
+}
+.subBtn {
+    background: #0e141e !important;
+    border: 4px solid #0e141e !important;
+    color: white !important;
+    width: 50%;
+    border-radius: 50px !important;
+}
+.subBtn:hover{
+	background: white  !important;
+	color: #0e141e !important;
+}
+
+
+
+/*=============================================================*/
+
+
+
+/*media queris*/
+
+
+
+
+
+
+
+
+@media (max-width: 992px) { 
+
+/*	.services{
+		background-color: red !important;
+	}*/
+
+
+
+
+
+}
+@media (max-width: 768px) { 
+
+	/*.services{
+		background-color: yellow  !important;
+	}*/
+	.sectionTitle{
+		font-size: 45px !important;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media (max-width: 460px) { 
+
+
+
+
+	/*.services{
+	background-color: orange  !important;
+	}*/
+	.sectionTitle{
+		font-size: 40px !important;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width: 400px) { 
+
+	/*.services{
+		background-color: blue  !important;
+	}*/
+	.sectionTitle{
+		font-size: 30px !important;
+	}
+	.sectionPara{
+		font-size: 13px;
+	}
+
+
+
+
+
+
+
+
+
+}
+@media (max-width: 355px) { 
+
+	/*.services{
+		background-color: green  !important;
+	}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

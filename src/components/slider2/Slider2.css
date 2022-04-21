@@ -1,0 +1,31 @@
+.slide2{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.slide2::before {
+    background-color: rgba(0, 0, 0, 0.37);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.slide2Content {
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.slide2Content p {
+    margin: 0 auto;
+    width: 65%; 
+    font-size: 20px;
+}
+.slide2Content h1{
+	font-size: 50px;
+}

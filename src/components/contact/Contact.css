@@ -1,0 +1,46 @@
+.contact{
+	background-color: #f5f7fb ;
+	padding: 70px 40px 70px 40px;
+	/*height: 100vh;*/
+}
+.contactHeader h1{
+	font-size: 50px;
+}
+.contactForm input{
+    height: 45px;
+    padding: 20px;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 19%);
+}
+.contactForm textarea{
+	box-shadow: 0 6px 16px 0 rgb(0 0 0 / 19%);
+}
+
+/*
+@media (max-width: 992px) { 
+
+     .contact{
+        height: 800px;
+    }
+}
+@media (max-width: 768px) { 
+
+   .contact{
+         height: 830px;
+    }
+}
+@media (max-width: 460px) { 
+
+
+}
+
+@media (max-width: 400px) { 
+
+
+}
+@media (max-width: 355px) { 
+
+
+    .contact{
+        height: 900px;
+    }
+}*/

@@ -1,0 +1,9 @@
+.about{
+	/*height: 100vh;*/
+	background-color: white;
+	padding: 100px 40px 70px 40px;
+	font-family: 'Poppins', sans-serif;
+}
+.aboutHeader h1{
+	font-size: 50px;
+}

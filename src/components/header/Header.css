@@ -1,0 +1,123 @@
+
+
+.navbar{
+    background-color: transparent !important;
+    box-shadow: 1px 1px 9px 1px #0e141e80;
+    backdrop-filter: blur(15px);
+    height: 90px;
+}
+.navbar *{
+	color: #0e141e;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgb(14, 20, 30)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+.navbar-nav .nav-item .nav-link:hover,.nav-link:focus{
+	color: white;
+	background: #0e141e;
+    border-radius: 5px;
+}
+a.navbar-brand {
+    font-weight: bolder;
+}
+.navbar-brand:hover{
+	color: #0e141e;
+}
+.navbar-toggler:focus{
+	box-shadow: none;
+}
+.navbar-nav .nav-item .nav-link{
+   font-weight: bold;
+   padding-right: 1rem;
+   padding-left: 1rem;
+}
+
+
+
+@media (max-width: 992px) { 
+
+.navbar{
+	height: auto;
+}
+
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Topbar
+--------------------------------------------------------------*/
+
+
+
+
+#topbar {
+  background:#0e141e  !important;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+#topbar.topbar-scrolled {
+  top: -40px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+  text-decoration: underline;
+}
+
+#topbar .contact-info i {
+  padding-right: 4px;
+  margin-left: 15px;
+}
+
+#topbar .contact-info i:first-child {
+  margin-left: 0;
+}
+
+#topbar .social-links a {
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 15px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #ffffff4f;
+  transition: all 0.5s;
+  z-index: 997;
+  top: 40px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header.header-scrolled {
+  top: 0;
+}
+
+
+@media (max-width: 992px) {
+  #header {
+    top: 0;
+  }
+  #header .logo {
+    font-size: 28px;
+  }
+}

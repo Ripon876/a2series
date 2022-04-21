@@ -20,27 +20,13 @@ function Services({home}) {
 				<div className="container">
 					<div className="row justify-content-center">
 
-					{/*<ServiceItem title="Service title 1" icon="fa-solid fa-code" para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.icies ligula sed magna dictum porta."/>
-						<ServiceItem title="Service title 2" icon="fa-solid fa-code" para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.icies ligula sed magna dictum porta."/>
-						<ServiceItem title="Service title 3" icon="fa-solid fa-code" para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.icies ligula sed magna dictum porta."/>
-						<ServiceItem title="Service title 4" icon="fa-solid fa-code" para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.icies ligula sed magna dictum porta."/>
-					*/}
-{/*
 
-                  <ServiceItem title="Service title 1" para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus "/>
-                  <ServiceItem title="Service title 2"  para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus "/>
-                  <ServiceItem title="Service title 2"  para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus "/>
-                  <ServiceItem title="Service title 2"  para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus "/>
-                  <ServiceItem title="Service title 2" last para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus "/>
-
-                  */}
-
-
-<ServiceItem3 title="Service title 1" para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla" img="" />
-<ServiceItem3 title="Service title 1" para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla" img="" />
-<ServiceItem3 title="Service title 1" para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla" img="" />
-<ServiceItem3 title="Service title 1" para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla" img="" />
-<ServiceItem3 title="Service title 1" last para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nulla" img="" />
+				<ServiceItem3 title="Mobile App Development"  imgSrc="mobile.png"     para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nullalibero malesuada feugiat. Curabitur non nulla." img="" />
+				<ServiceItem3 title="Software Development"  imgSrc="pc.png"     para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nullalibero malesuada feugiat. Curabitur non nulla." img="" />
+				<ServiceItem3 title="Digital Marketing"  imgSrc="marketing.png"     para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nullalibero malesuada feugiat. Curabitur non nulla." img="" />
+				<ServiceItem3 title="Graphic Design"  imgSrc="graphics.png"     para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nullalibero malesuada feugiat. Curabitur non nulla." img="" />
+				<ServiceItem3 title="Web Application"  imgSrc="web-app.png"      para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nullalibero malesuada feugiat. Curabitur non nulla." img="" />
+				<ServiceItem3 title="Web Development"  imgSrc="s1.png"      para="Cras ultrNulla quis lorem ut libero malesuada feugiat. Curabitur non nullalibero malesuada feugiat. Curabitur non nulla." img="" />
 
 
 

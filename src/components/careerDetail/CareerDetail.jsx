@@ -41,6 +41,12 @@ function CareerDetail() {
 				<li>Collaborate with team members and ensure knowledge transfer.</li>
 			</ul>
         </div>
+
+        <div className="text-start w-50 py-4">
+        	<button className="btn subBtn w-25">
+        	<a href="/career/apply" className="text-decoration-none ">Apply Now</a>
+        	</button>
+        </div>
        </div>
 
 

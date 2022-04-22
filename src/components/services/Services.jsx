@@ -45,13 +45,6 @@ function Services({home}) {
 
 
 
-
-
-
-
-
-
-
 				</div>	
 			</div>
 		</div>

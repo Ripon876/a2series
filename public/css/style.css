@@ -16,7 +16,12 @@ input{
 	background: white  !important;
 	color: #0e141e !important;
 }
-
+.subBtn *{
+  color: white;
+}
+.subBtn:hover  * {
+	color: black;
+}
 .center{
 	position: absolute;
 	top: 50%;

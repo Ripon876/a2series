@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation , Autoplay} from "swiper";
 import axios from 'axios';
+import {Fade} from "react-reveal";
 import "./OurClient.css"
 import "swiper/css";
 import "swiper/css/navigation";
@@ -26,6 +27,7 @@ function OurClient() {
 
 
 	return (
+<Fade>
 		<div class="ourClient py-5">
 		<div className="ourClientHeader text-center">
 			<h1 className="sectionTitle bold">Our Clients</h1>
@@ -72,6 +74,7 @@ function OurClient() {
 		</div>
 		
 		</div>
+		</Fade>
 	)
 }
 

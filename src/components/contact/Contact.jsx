@@ -1,5 +1,6 @@
 import React,{useState}  from 'react';
 import axios from 'axios';
+import {Fade} from 'react-reveal';
 import './Contact.css';
 
 
@@ -136,6 +137,7 @@ e.preventDefault();
 
 
 	return (
+		<Fade>
 		<div className="contact" id="contact">
 			<div className="contactHeader text-center pt-4">
 				<h1 className="sectionTitle bold">Contact Us</h1>
@@ -186,6 +188,7 @@ e.preventDefault();
 				</div>
 			</div>				
 		</div>
+		</Fade>
 	)
 }
 

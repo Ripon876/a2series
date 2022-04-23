@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
+import {Fade} from 'react-reveal';
 import './About.css';
 
 function About() {
@@ -28,6 +29,7 @@ function About() {
 
 
 	return (
+		<Fade>
 		<div className="about" id="about">
 			<div className="aboutHeader text-center">
 				<h1 className="sectionTitle bold">{data?.title ? data.title : "About"}</h1>
@@ -51,6 +53,7 @@ function About() {
 				</div>
 			</div>
 		</div>
+		</Fade>
 	)
 }
 

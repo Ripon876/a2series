@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import {Link} from "react-router-dom";
 import axios from 'axios';
+import {Fade} from 'react-reveal';
 /*import ServiceItem from './ServiceItem';
 import ServiceItem2 from './ServiceItem2';
 import ServiceItem3 from './ServiceItem3';*/
@@ -38,6 +39,7 @@ function Services({home}) {
 
 
 	return (
+		<Fade>
 		<div className="services" id="services">
 			<div className="serviceHeader text-center pt-4">
 				<h1 className="sectionTitle bold">{data?.title ? data.title : ''}</h1>
@@ -66,6 +68,7 @@ function Services({home}) {
 				</div>	
 			</div>
 		</div>
+		</Fade>
 	)
 }
 

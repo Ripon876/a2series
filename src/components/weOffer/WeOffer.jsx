@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
+import {Fade} from 'react-reveal';
 import './WeOffer.css';
 import Offer from './Offer';
 
@@ -25,6 +26,7 @@ function WeOffer() {
 
 
 	return (
+		<Fade>
 		<div className="weOffer">
 			<div className="weOfferHeader text-center">
 				<h1 className="bold sectionTitle">{data?.title ? data.title : ''}</h1>
@@ -42,6 +44,7 @@ function WeOffer() {
 				</div>
 			</div>
 		</div>
+		</Fade>
 	)
 }
 

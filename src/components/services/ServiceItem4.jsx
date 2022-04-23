@@ -5,8 +5,10 @@ import {Fade} from "react-reveal";
 
 function ServiceItem4({title,para,scf,imgSrc}) {
 	return (
-		<Fade duration={1000}>
+		
+		
 		<div className="justify-content-center py-5 my-3 row">
+		<Fade left={scf ? false : true} right={scf ? true : false}>
 			<div className={`col-lg-6 col-md-6 col-sm-10 ${scf && 'order-1'}`}>
 			    <div className="h-100 position-relative w-100">
 			        <div className="serviceImg">
@@ -15,6 +17,7 @@ function ServiceItem4({title,para,scf,imgSrc}) {
 			    </div>
 
             </div>
+            </Fade>
         <div className="col-lg-6 col-md-6 col-sm-10">
 	        <div className="h-100 position-relative w-100">
 	        	<div className="serviceInfo p-3 center">
@@ -24,7 +27,8 @@ function ServiceItem4({title,para,scf,imgSrc}) {
 	        </div>
         </div>	
 		</div>
-</Fade>
+
+
 	)
 }
 

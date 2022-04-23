@@ -12,7 +12,7 @@ function ServiceItem3({title,para,last,imgSrc}) {
 			<div className="row">
 			<div style={{width : "35%"}} class="position-relative">
 				<div className="cardIcon text-center">
-					<img src={`./img/${imgSrc}`} alt="" class="img-fluid rounded" />
+					<img src={imgSrc} alt="" class="img-fluid rounded" />
 				</div>
 			</div>
 				<div style={{width : "65%"}}>

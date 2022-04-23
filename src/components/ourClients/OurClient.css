@@ -32,6 +32,9 @@
   object-fit: cover;
 }
 
+.ourClientHeader h1{
+  font-size: 50px;
+}
 
 .ourClientImg img{
   width: 150px;

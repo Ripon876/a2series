@@ -1,19 +1,34 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation , Autoplay} from "swiper";
+import axios from 'axios';
 import "./OurClient.css"
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
 
 
 function OurClient() {
+
+
+
+ const [data, setData] = useState([]);
+
+ useEffect(() => {
+       
+       axios.get(`${process.env.REACT_APP_SITE_HOST}/api/clients`)
+       .then((data) => {
+        setData(data.data);
+       })
+
+ }, [])
+
+
+
 	return (
 		<div class="ourClient py-5">
 		<div className="ourClientHeader text-center">
-			<h1>Our Clients</h1>
+			<h1 className="sectionTitle bold">Our Clients</h1>
 			<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec sollicitudin molestie malesuada.</p>
 		</div>
 		<div className="container">
@@ -42,64 +57,17 @@ function OurClient() {
 	      slidesPerView: 2,
 	    },
 	  }}
-
-
-
-
-
-
-
-
-
-
-
-
 		>
-        <SwiperSlide>
-        <div className="ourClientImg">
-        	<img src="./img/c1.png" alt="" className="img-fluid" />
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="ourClientImg">
-        	<img src="./img/c1.png" alt="" className="img-fluid" />
-        </div>     
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="ourClientImg">
-        	<img src="./img/c1.png" alt="" className="img-fluid" />
-        </div>      
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="ourClientImg">
-        	<img src="./img/c1.png" alt="" className="img-fluid" />
-        </div>   
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="ourClientImg">
-        	<img src="./img/c1.png" alt="" className="img-fluid" />
-        </div>     
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="ourClientImg">
-        	<img src="./img/c1.png" alt="" className="img-fluid" />
-        </div> 
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="ourClientImg">
-        	<img src="./img/c1.png" alt="" className="img-fluid" />
-        </div>  
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="ourClientImg">
-        	<img src="./img/c1.png" alt="" className="img-fluid" />
-        </div>  
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="ourClientImg">
-        	<img src="./img/c1.png" alt="" className="img-fluid" />
-        </div> 
-        </SwiperSlide>
+
+		{data.clients?.map((clientLogo) => 
+		    <SwiperSlide>
+		        <div className="ourClientImg">
+		        	<img src={clientLogo}  alt="" className="img-fluid" />
+		        </div>
+		    </SwiperSlide>
+		)}
+
+
       </Swiper>
 		</div>
 		

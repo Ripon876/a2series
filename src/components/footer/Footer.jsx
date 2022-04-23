@@ -2,7 +2,8 @@ import React from 'react';
 import "./Footer.css";
 
 
-function Footer() {
+function Footer({data}) {
+
 	return (
 		<div className="footer">
 			    <footer className="footer-container">
@@ -10,8 +11,8 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-md-4 pr-md-5">
-            <a href="#" className="footer-site-logo d-block mb-4">Logo</a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quasi perferendis ratione perspiciatis accusantium.</p>
+            <a href="#" className="footer-site-logo d-block mb-4">{ data?.logo ? data.logo : 'logo'}</a>
+            <p>{ data?.description ? data.description : 'Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum cong'}</p>
           </div>
           <div className="col-md">
             <ul className="list-unstyled nav-links">
@@ -40,11 +41,9 @@ function Footer() {
           </div>
           <div className="col-md text-md-center">
             <ul className="social list-unstyled">
-              <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
-              <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
-              <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-              <li><a href="#"><span className="icon-pinterest"></span></a></li>
-              <li><a href="#"><span className="icon-dribbble"></span></a></li>
+              <li><a href={ data?.social_links ? data.social_links.fb : 'https://facebook.com'} ><i className="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href={ data?.social_links ? data.social_links.instagram : 'https://instagram.com'} ><i className="fa-brands fa-instagram"></i></a></li>
+              <li><a href={ data?.social_links ? data.social_links.twitter : 'https://twitter.com'} ><i className="fa-brands fa-twitter"></i></a></li>
             </ul>
             <p className=""><a href="#contact" className="btn btn-tertiary">Contact Us</a></p>
           </div>

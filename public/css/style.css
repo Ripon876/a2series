@@ -27,7 +27,9 @@ input{
 	top: 50%;
 	transform: translate(0,-50%);
 }
-
+.bold{
+	font-weight: bold !important;
+}
 /*=============================================================*/
 
 

@@ -1,24 +1,46 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import Carousel from 're-carousel';
+import axios from 'axios';
 import IndicatorDots from './IndicatorDots';
 import Buttons from './Buttons';
 import Slide from './Slide';
 import './Slider.css';
 
-//
-//  style={{backgroundImage: 'url(https://img.freepik.com/free-photo/low-angle-greyscale-shot-airplane-flying-high-rise-buildings_181624-18257.jpg)'}}
- // style={{backgroundImage: 'url(https://img.freepik.com/free-photo/misty-forest-black-white_53876-145554.jpg)'}}
 
 function Slider() {
  
+
+
+
+ const [slider, setSlider] = useState([]);
+
+ useEffect(() => {
+       
+       axios.get(`${process.env.REACT_APP_SITE_HOST}/api/slides`)
+       .then((data) => {
+        setSlider(data.data)
+       })
+
+ }, [])
+
+
+
+
+
+
+
+
  var sample_para = 'Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh.'
 
 	return (
 		<div className="slider">
 			<Carousel auto loop={true} widgets={[IndicatorDots]}  >
-				<Slide   title="Title 1" para={sample_para} img="./img/1.svg"/>
-				<Slide sif title="Title 2"   para={sample_para}  img="./img/2.svg"/>
-				<Slide  title="Title 3" para={sample_para}   img="./img/3.svg"/>
+				{slider.slides?.map((slide) => 
+
+				<Slide   title={slide.title} sif={slide.show_img_first ? true : false} para={slide.description} img={slide.img}   />
+
+				     
+				)}
 			</Carousel>
 		</div>
 	)

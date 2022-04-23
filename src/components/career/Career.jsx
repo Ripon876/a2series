@@ -6,7 +6,7 @@ function Career() {
 	return (
 		<div className="career" id="career">
 			<div className="serviceHeader text-center pt-4">
-				<h1 className="sectionTitle">Career</h1>
+				<h1 className="sectionTitle bold">Career</h1>
 				<p className="text-muted sectionPara">Come Work With Us</p>
 			</div>
 			<div className="careerContent py-5">
@@ -14,7 +14,7 @@ function Career() {
 				<div className="justify-content-center row">
 					<div className="col-lg-9">
 						<h1>JOIN US</h1>
-					<p>At Enosis, we foster and inspire innovative ideas to support growth and value addition. We are passionate about the work we do. Following a transparent system and keeping the communication channels open, we commute ideas and suggestions within the team. We invest in our people and offer them numerous learning and development opportunities. Join us to be a part of a visionary team.</p>
+					<p style={{fontSize: "19px"}}>At Enosis, we foster and inspire innovative ideas to support growth and value addition. We are passionate about the work we do. Following a transparent system and keeping the communication channels open, we commute ideas and suggestions within the team. We invest in our people and offer them numerous learning and development opportunities. Join us to be a part of a visionary team.</p>
 					</div>
 				</div>
 					   

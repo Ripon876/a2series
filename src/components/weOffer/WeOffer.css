@@ -1,0 +1,11 @@
+/*  offer */
+.weOffer{
+	background-color: white;
+	padding: 100px 0 70px;
+}
+.weOfferHeader h1{
+	font-size: 50px;
+}
+.offer p {
+    font-size: 18px;
+}

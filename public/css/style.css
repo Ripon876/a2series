@@ -30,6 +30,12 @@ input{
 .bold{
 	font-weight: bold !important;
 }
+
+.sectionPara {
+    font-size: 19px;
+}
+
+
 /*=============================================================*/
 
 
@@ -56,21 +62,26 @@ input{
 }
 @media (max-width: 768px) { 
 
-	/*.services{
-		background-color: yellow  !important;
-	}*/
 	.sectionTitle{
 		font-size: 45px !important;
 	}
 
 
 
+	.showDown{
+	 order: 1 !important;
+	}
+	.showUp{
+	 order: 0 !important;
+	}
 
-
-
-
-
-
+    .sliderImg {
+        width: 70%;
+        margin: auto;
+    }
+    .sliderInfo{
+    	text-align: center;
+	}
 
 
 

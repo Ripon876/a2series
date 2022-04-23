@@ -2,12 +2,12 @@ import React,{useEffect,useState} from 'react';
 import axios from 'axios';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
-import ApplicationForm from '../components/career/ApplicationForm';
+import WhoWeAre from '../components/whoWeAre/WhoWeAre';
  
 
-function   JoiningForm() {
-
-const [data, setData] = useState([]);
+function AboutUsPage() {
+	
+ const [data, setData] = useState([]);
 
  useEffect(() => {
        
@@ -18,13 +18,17 @@ const [data, setData] = useState([]);
 
  }, [])
 
+
+
+
 	return (
 		<>
 			<Header data={data} />
-		    <ApplicationForm />
-			<Footer data={data} />
+		    <WhoWeAre />
+			<Footer  data={data} />
 		</>
 	)
+
 }
 
-export default  JoiningForm;
+export default AboutUsPage;

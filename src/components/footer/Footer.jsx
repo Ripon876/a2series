@@ -12,7 +12,7 @@ function Footer({data}) {
         <div className="row">
           <div className="col-md-4 pr-md-5">
             <a href="#" className="footer-site-logo d-block mb-4">{ data?.logo ? data.logo : 'logo'}</a>
-            <p>{ data?.description ? data.description : 'Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum cong'}</p>
+            <p className="text-white">{ data?.description ? data.description : 'Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum cong'}</p>
           </div>
           <div className="col-md">
             <ul className="list-unstyled nav-links">

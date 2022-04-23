@@ -9,7 +9,7 @@ function ServiceItem4({title,para,scf,imgSrc}) {
 		
 		<div className="justify-content-center py-5 my-3 row">
 		<Fade left={scf ? false : true} right={scf ? true : false}>
-			<div className={`col-lg-6 col-md-6 col-sm-10 ${scf && 'order-1'}`}>
+			<div className={`col-lg-6 col-md-6 col-sm-10 ${scf && 'order-1'} showUp`}>
 			    <div className="h-100 position-relative w-100">
 			        <div className="serviceImg">
 			        	<img src={`./img/${imgSrc}`} alt={title} className="img-fluid" />
@@ -18,7 +18,7 @@ function ServiceItem4({title,para,scf,imgSrc}) {
 
             </div>
             </Fade>
-        <div className="col-lg-6 col-md-6 col-sm-10">
+        <div className="col-lg-6 col-md-6 col-sm-10 showDown">
 	        <div className="h-100 position-relative w-100">
 	        	<div className="serviceInfo p-3 center">
 	        		<h2>{title}</h2>

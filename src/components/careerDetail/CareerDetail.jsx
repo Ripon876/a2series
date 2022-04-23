@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import "./CareerDetail.css";
 
 
@@ -44,7 +45,7 @@ function CareerDetail() {
 
         <div className="text-start w-50 py-4">
         	<button className="btn subBtn w-25">
-        	<a href="/career/apply" className="text-decoration-none ">Apply Now</a>
+        	<Link to="/career/apply" className="text-decoration-none ">Apply Now</Link>
         	</button>
         </div>
        </div>

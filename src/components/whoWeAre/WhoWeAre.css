@@ -1,0 +1,15 @@
+.whoWeAre{
+	background-color: white;
+    padding: 148px 70px;
+
+}
+.whoWeAre .iconBox{
+	width: 100px;
+	margin: auto;
+}
+.whoWeAre .card-text p {  
+    font-size: 18px;
+}
+.whoWeAre p.sectionPara {
+	font-size: 19px;
+}

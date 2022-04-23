@@ -43,24 +43,25 @@ function Services({home}) {
 		<div className="services" id="services">
 			<div className="serviceHeader text-center pt-4">
 				<h1 className="sectionTitle bold">{data?.title ? data.title : ''}</h1>
-				<p className="text-muted sectionPara m-auto w-75">{data?.short_description ? data.short_description : ''}</p>
+				<p className="sectionPara m-auto w-75">{data?.short_description ? data.short_description : ''}</p>
 			</div>
 			<div className="serviceContent pt-5 pb-5">
 				<div className="container">
-					<div className="row justify-content-center">
+					{/*<div className="row justify-content-center">
 						{data.srevices?.map((service) => 
 
 							<ServiceItem3 title={service.title}  imgSrc={service.img}     para={service.description}  />
 
 						)}
 					</div>
-
+*/}
 					
 
 
               <ServiceItem4 title="Mobile App Development" imgSrc="mobile.svg" />
               <ServiceItem4 title="Software Development" scf imgSrc="pc.svg" />
               <ServiceItem4 title="Digital Marketing" imgSrc="marketing.svg" />
+              <ServiceItem4 title="Graphic Design" scf imgSrc="graphics.svg" />
 
 
 

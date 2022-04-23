@@ -29,6 +29,7 @@ function ServicesPage() {
 	return (
 		<>
 			<Header data={data} />
+			<div className="pt-5 mt-3"></div>
 			<Services />
 			<Footer data={data}  />
 		</>

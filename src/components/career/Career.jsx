@@ -1,8 +1,28 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
+import axios from 'axios';
 import Opening from "./Opening";
 import "./Career.css";
 
 function Career() {
+
+
+
+
+ const [data, setData] = useState([]);
+
+ useEffect(() => {
+       
+       axios.get(`${process.env.REACT_APP_SITE_HOST}/api/careers`)
+       .then((data) => {
+        setData(data.data);
+       })
+
+ }, [])
+
+
+
+
+
 	return (
 		<div className="career" id="career">
 			<div className="serviceHeader text-center pt-4">
@@ -13,18 +33,22 @@ function Career() {
 				<div className="container text-center">
 				<div className="justify-content-center row">
 					<div className="col-lg-9">
-						<h1>JOIN US</h1>
-					<p style={{fontSize: "19px"}}>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus.</p>
+						<h1>{data?.title ? data.title : ''}</h1>
+					<p style={{fontSize: "19px"}}>{data?.description ? data.description : ''}</p>
 					</div>
 				</div>
 					   
 
 
            <div className="openings py-5">
-           	    <h1 className="pb-4">CURRENT OPENINGS</h1>
+           	    <h1 className="pb-4">{data?.openingsTitle ? data.openingsTitle : ''}</h1>
+{data.openings?.map((opening) => 
 
-			<Opening title="Software Development Lead"  position="Engineering"/>
-			<Opening title="Software Development Lead"  position="Engineering"/>
+	<Opening title={opening.title}  position={opening.designation}/>
+
+)}
+			
+			{/*<Opening title="Software Development Lead"  position="Engineering"/>*/}
 
            </div>
 

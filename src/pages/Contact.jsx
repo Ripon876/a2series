@@ -37,7 +37,7 @@ function   ContactPage() {
               </div>
              	<div className="row justify-content-center">
              		<div className="col-lg-4 p-4">
-             			<ContactDetails />
+             			<ContactDetails data={data} />
              		</div>
              		<div className="col-lg-7 p-lg-0 p-sm-5">
              			<ContactForm />	

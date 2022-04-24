@@ -12,7 +12,7 @@ function ServiceItem4({title,para,scf,imgSrc}) {
 			<div className={`col-lg-6 col-md-6 col-sm-10 ${scf && 'order-1'} showUp`}>
 			    <div className="h-100 position-relative w-100">
 			        <div className="serviceImg">
-			        	<img src={`./img/${imgSrc}`} alt={title} className="img-fluid" />
+			        	<img src={imgSrc} alt={title} className="img-fluid" />
 			        </div>			        	
 			    </div>
 

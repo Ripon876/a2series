@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import { Markup } from 'react-render-markup';
 import axios from 'axios';
 import {Fade} from 'react-reveal';
 import './About.css';
@@ -37,7 +38,7 @@ function About() {
 			</div>
 			<div className="aboutContent pt-5">
 				<div className="container">
-					<div className="row">
+					<div className="justify-content-center row">
                         <div className="col-lg-6 text-center">
                         <div className="d-flex h-100">
                         	<img src={data?.img && data.img} className="img-fluid" alt="" />
@@ -46,7 +47,7 @@ function About() {
                         <div className="col-lg-6 pt-5">
                         <div className="aboutInfo">
                         	<h1>Hi!,</h1>
-                        	<p>{data?.long_descrition ? data.long_descrition : ""}</p>
+                        	<p><Markup markup={data?.long_descrition ? data.long_descrition : ""} /></p>
                         </div>
                         </div>
 					</div>

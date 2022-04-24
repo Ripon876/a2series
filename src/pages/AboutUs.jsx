@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import WhoWeAre from '../components/whoWeAre/WhoWeAre';
+
  
 
 function AboutUsPage() {
@@ -23,9 +24,9 @@ function AboutUsPage() {
 
 	return (
 		<>
-			<Header data={data} />
-		    <WhoWeAre />
-			<Footer  data={data} />
+		<Header data={data} />
+		<WhoWeAre />
+	      <Footer  data={data} />
 		</>
 	)
 

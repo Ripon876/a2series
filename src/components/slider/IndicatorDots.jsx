@@ -8,7 +8,7 @@ function Dot (props) {
       height: '8px',
       width: '8px',
       borderRadius: '4px',
-      backgroundColor: 'white',
+      backgroundColor: '#0e141e',
       margin: '7px 5px',
       opacity: props.selected ? '1' : '0.3',
       transitionDuration: '300ms'

@@ -1,51 +1,55 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React,{useState,useEffect} from 'react';
+import axios from 'axios';
+import { Markup } from 'react-render-markup';
+import {Link,useParams} from 'react-router-dom';
 import "./CareerDetail.css";
 
 
 function CareerDetail() {
+ var params =  useParams();
+ var title = params.title;
+
+ const [data, setData] = useState([]);
+
+ useEffect(() => {
+       
+    axios.get(`${process.env.REACT_APP_SITE_HOST}/api/careers/${title}`)
+    .then((data) => {
+
+	    setData(data.data);
+
+	
+    })
+
+
+
+ }, [])
+
+
+
+
 	return (
 		<div className="careerDetail">
 		<div className="container">
 			<div className="mt-5 openingHeader pt-5 pb-3">
-				<h1>Software Development Lead</h1>
-				<p>Engineering</p>
+				<h1>{data?.title ? data.title : ''}</h1>
+				<p>{data?.designation ? data.designation : ''}</p>
 			</div>	
        
 
-       <div className="openingRequirments">
-       <div class="requirements">
-            <div class="job-feature-title">
-            	<h5>Major Duties & Responsibilities</h5>
-            </div>
-			<ul>
-				<li>Design, code, test and implement according to software design specifications following standard coding styles and practices.</li>
-				<li>Analyze the requirements and understand the deliverables.</li>
-				<li>Develop software solutions by studying information needs, systems flow, data usage, and work processes.</li>
-				<li>Document and demonstrate solutions by developing documentation, flowcharts, layouts, diagrams, charts, code comments and clear code.</li>
-				<li>Participate in code/design reviews after investigating current software development projects.</li>
-				<li>Seek out new technologies and ideas to add value to project.</li>
-				<li>Collaborate with team members and ensure knowledge transfer.</li>
-			</ul>
-        </div>
-       <div class="requirements">
-            <div class="job-feature-title">
-            	<h5>Major Duties & Responsibilities</h5>
-            </div>
-			<ul>
-				<li>Design, code, test and implement according to software design specifications following standard coding styles and practices.</li>
-				<li>Analyze the requirements and understand the deliverables.</li>
-				<li>Develop software solutions by studying information needs, systems flow, data usage, and work processes.</li>
-				<li>Document and demonstrate solutions by developing documentation, flowcharts, layouts, diagrams, charts, code comments and clear code.</li>
-				<li>Participate in code/design reviews after investigating current software development projects.</li>
-				<li>Seek out new technologies and ideas to add value to project.</li>
-				<li>Collaborate with team members and ensure knowledge transfer.</li>
-			</ul>
-        </div>
+          <div className="openingRequirments">
+         		<Markup markup={data?.description} />
+          <div className="text-start w-25 py-4">
+        	<button className="btn subBtn ">
 
-        <div className="text-start w-50 py-4">
-        	<button className="btn subBtn w-25">
-        	<Link to="/career/apply" className="text-decoration-none ">Apply Now</Link>
+{data?.form_link ? 
+<a href={data.form_link} className="text-decoration-none" target="_blank">Apply Now</a>
+  : 
+<Link to='/career/apply' className="text-decoration-none">Apply Now</Link>
+}
+
+
+        	
         	</button>
         </div>
        </div>

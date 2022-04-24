@@ -14,8 +14,8 @@ const nav  = useRef(null);
 				
 				<div className="container d-flex justify-content-between">
 				    <div className="contact-info mr-auto">
-				        <i className="icofont-envelope"></i> <a href={`mailto:${data?.email ? data.email : 'contact@tech.com'}`}>{ data?.email ? data.email : 'contact@tech.com'}</a>
-				        <i className="icofont-phone"></i> { data.number ?  data.number : '+1 5589 55488 5'}
+				        <i className="icofont-envelope"></i> <a href={`mailto:${data?.email ? data.email : ''}`}>{ data?.email ? data.email : ''}</a>
+				        <i className="icofont-phone"></i> { data.number ?  data.number : ''}
 				    </div>
 				    <div className="social-links">
 				        <a href={ data?.social_links ?  data.social_links.fb : 'https://facebook.com'} className="facebook"><i className="fa-brands fa-facebook-f"></i></a>
@@ -28,7 +28,7 @@ const nav  = useRef(null);
 			<header id="header" className="fixed-top"> 
 					<nav className="navbar navbar-expand-lg py-3" ref={nav}>
 					  <div className="container">
-					    <Link className="navbar-brand" to="/">{ data.logo ?  data.logo : 'Logo'}</Link>
+					    <Link className="navbar-brand" to="/">{ data.logo ?  data.logo : ''}</Link>
 					    <button className="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 					      <span className="navbar-toggler-icon"></span>
 					    </button>

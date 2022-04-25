@@ -1,0 +1,17 @@
+.interns {
+	padding: 140px 0 70px;
+}
+.internsContent .card{
+	box-shadow: 1px 4px 2rem 0px rgb(33 37 41 / 31%)
+}
+.internsContent .card-body{
+	text-align: center;
+    color: white;
+    background: #0e141e;
+    padding: 1rem 1rem;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.internsContent .card-body h1{
+	font-size: 25px;
+}

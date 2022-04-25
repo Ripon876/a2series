@@ -47,6 +47,9 @@ const nav  = useRef(null);
 					          <Link className="nav-link" to="/career">Career</Link>
 					        </li>
 					        <li className="nav-item">
+					          <Link className="nav-link" to="/interns">Interns</Link>
+					        </li>
+					        <li className="nav-item">
 					          <Link className="nav-link" to="/contact">Contact</Link>
 					        </li>
 					      </ul>

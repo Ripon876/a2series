@@ -5,6 +5,8 @@ import ServicesPage from "./pages/Services";
 import AboutUsPage from "./pages/AboutUs";
 import CareerPage from "./pages/Career";
 import CareerDetailPage from "./pages/CareerDetailPage";
+import InternsPage from "./pages/Interns";
+import InternProfilePage from "./pages/InternProfile";
 import ContactPage from "./pages/Contact";
 import JoiningForm from "./pages/JoiningForm";
 
@@ -22,6 +24,8 @@ function App() {
        <Route path="/career" element={<CareerPage />} />
        <Route path="/career/:title" element={<CareerDetailPage />} />
        <Route path="/career/apply" element={<JoiningForm />} />
+       <Route path="/interns" element={<InternsPage />} />
+       <Route path="/interns/:id" element={<InternProfilePage />} />
        <Route path="/contact" element={<ContactPage />} />
   </Routes>
 

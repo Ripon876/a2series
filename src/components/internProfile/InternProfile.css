@@ -1,0 +1,22 @@
+.internProfile{
+	padding: 140px 0 70px;
+}
+.internSocials i {
+	border: 4px solid #0e141e;
+    font-size: 20px;
+    width: 35px;
+    text-align: center;
+    padding: 4px;
+    transition: all 0.3s;
+    height: 35px;
+    color: white;
+    background: #0e141e;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.internSocials i:hover {
+	color: #0e141e;
+	background: white;
+	border: 4px solid #0e141e;
+}

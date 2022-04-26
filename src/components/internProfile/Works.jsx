@@ -1,32 +1,23 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 
-function Works() {
+function Works({projects}) {
 
-const [imgLength, setImgLength] = useState(0);
- const totalImg = 3;
-
-useEffect(() => {
-	console.log('loaded',imgLength)
-}, [imgLength])
-
-
+// console.log(projects)
+// // document.getElementsByClassName("btn-primary")[0].click()
 	return (
        
 		<div className="Works py-4">
 			<div className="row justify-content-center">
 
+				{projects?.map((project) => 
 
-			 
-				<div className="col-lg-4 px-2 pb-3">
-					<img onLoad={()=> {setImgLength(imgLength+1)}} src="https://api.site-shot.com/?url=https://google.com/&userkey=IAAIEYKBJANTHZ6IA2EGC7G5XJ" alt="" className='img-fluid' />
-				</div>
-				<div className="col-lg-4 px-2 pb-3">
-					<img onLoad={()=> {setImgLength(imgLength+1)}} src="https://api.site-shot.com/?url=https://google.com/&userkey=IAAIEYKBJANTHZ6IA2EGC7G5XJ" alt="" className='img-fluid' />
-				</div>
-				<div className="col-lg-4 px-2 pb-3">
-					<img onLoad={()=> {setImgLength(imgLength+1)}} src="https://api.site-shot.com/?url=https://google.com/&userkey=IAAIEYKBJANTHZ6IA2EGC7G5XJ" alt="" className='img-fluid' />
-				</div>
-		
+					<div className="col-lg-4 px-2 pb-3">
+						<img src={`https://api.site-shot.com/?url=${project.url}&userkey=IAAIEYKBJANTHZ6IA2EGC7G5XJ`} alt={project.title} className='img-fluid' />
+						<p>{project.title}</p>
+					</div>
+
+				)}
+
 			</div>
 		</div>
 	)

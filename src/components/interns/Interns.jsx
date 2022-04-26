@@ -1,9 +1,25 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
+import axios from 'axios';
 import Intern from './Intern';
 import './Interns.css';
 
 
 function Interns() {
+
+
+ const [data, setData] = useState([]);
+
+ useEffect(() => {
+        
+       axios.get(`${process.env.REACT_APP_SITE_HOST}/api/interns`)
+       .then((data) => {
+        setData(data.data);
+       })
+
+ }, [])
+
+
+
 	return (
 		<div className="interns my-5">
 			<div className="internsHeader text-center">
@@ -13,12 +29,13 @@ function Interns() {
 			<div className="internsContent py-5">
 				<div className="container">
 					<div className="row justify-content-center">
-                         <Intern name="John Doe" id="343643" position="Frontend Developer" />
-                         <Intern name="John Doe" id="343643" position="Frontend Developer" />
-                         <Intern name="John Doe" id="343643" position="Frontend Developer" />
-                         <Intern name="John Doe" id="343643" position="Frontend Developer" />
-                         <Intern name="John Doe" id="343643" position="Frontend Developer" />
-                         <Intern name="John Doe" id="343643" position="Frontend Developer" />
+
+						{data?.map((intern) => 
+
+							<Intern name={intern.name} id={intern._id} position={intern.position} imgSrc={intern.img} />
+						
+						)}
+                         
 					</div>
 				</div>
 			</div>

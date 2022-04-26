@@ -13,6 +13,12 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+.internsContent .cardImg img{
+    max-width: 260px;
+    object-fit: contain;
+    width: 100%;
+
+}
 .internsContent .card-body h1{
 	font-size: 25px;
 }

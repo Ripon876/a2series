@@ -7,11 +7,23 @@
 .internsContent .card-body{
 	text-align: center;
     color: white;
-    background: #0e141e;
+    backdrop-filter: blur(6px);
+    background: #0e141e5e;
     padding: 1rem 1rem;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 .internsContent .card-body h1{
 	font-size: 25px;
+}
+.card.border-0 {
+    background-size: 203%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+border-radius: 10px;transition: all 0.3s;}
+
+.border-0.card:hover {
+	/*background-position: 56%;*/
+	background-size: 215%;
 }

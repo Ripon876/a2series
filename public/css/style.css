@@ -62,6 +62,12 @@ input{
 }
 @media (max-width: 768px) { 
 
+
+   a.navbar-brand {
+   	width: 60px !important; 
+   }
+
+
 	.sectionTitle{
 		font-size: 45px !important;
 	}
@@ -76,7 +82,7 @@ input{
 	}
 
     .sliderImg {
-        width: 70%;
+        width: 55%;
         margin: auto;
     }
     .sliderInfo{
@@ -84,6 +90,12 @@ input{
 	}
 
 
+.sliderInfo{
+    text-align: center !important;
+    left: 50% !important;
+    width: 70%;
+    transform: translate(-50%,0) !important;
+}
 
 
 
@@ -91,6 +103,15 @@ input{
 
 
 }
+@media (max-width: 576px) { 
+
+
+
+
+
+
+}
+
 @media (max-width: 460px) { 
 
 

@@ -12,7 +12,9 @@ function Footer({data}) {
       <div className="container">
         <div className="row">
           <div className="col-md-4 pr-md-5">
-            <Link to="/" className="footer-site-logo d-block mb-4">{ data?.logo ? data.logo : 'logo'}</Link>
+            <Link to="/" className="footer-site-logo d-block mb-4">
+              { data?.logo ? data.logo.split('/').reverse()[0].split('.')[0] : 'logo'}
+            </Link>
             <p className="text-white">{ data?.description ? data.description : 'Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum cong'}</p>
           </div>
           <div className="col-md">

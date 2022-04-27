@@ -5,7 +5,7 @@ function Slide({title,para,img,sif}) {
 			<div className="position-relative sliderItem" > 
 				   <div className="container sliderInfoContainer">
 					<div className="sliderContent row">
-					    <div className={`col-lg-7 col-md-6 col position-relative pt-sm-5 mt-sm-5 showDown ${sif ? `order-1` : ''}`} >
+					    <div className={`col-lg-7 col-md-6 col position-relative pt-sm-3 showDown ${sif ? `order-1` : ''}`} >
 			                <div className="sliderInfo">
 			                 	<h1>{title}</h1>
 			                 	<p>{para}</p>

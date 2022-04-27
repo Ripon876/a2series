@@ -9,6 +9,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-form-input-validation": "^2.0.5",
+    "react-helmet": "^6.1.0",
     "react-hook-form": "^7.29.0",
     "react-on-images-loaded": "^2.2.7",
     "react-render-markup": "^3.5.0",

@@ -20,6 +20,7 @@
 }
 a.navbar-brand {
     font-weight: bolder;
+    width: 80px;
 }
 .navbar-brand:hover{
 	color: #0e141e;
@@ -42,6 +43,8 @@ a.navbar-brand {
 }
 
 }
+
+
 
 
 

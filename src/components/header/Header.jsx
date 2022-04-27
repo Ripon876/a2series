@@ -1,5 +1,5 @@
 import React,{useRef} from 'react';
-// import TopBar from './TopBar';
+import {Helmet} from "react-helmet";
 import {Link} from "react-router-dom";
 import './Header.css';
 
@@ -10,6 +10,10 @@ const nav  = useRef(null);
 
 		return (
 		<>
+		 <Helmet>
+            <meta name="description" content={ data.description ?  data.description : ''} />
+            <meta name="keywords" content={ data.keywords ?  data.keywords : ''} />
+         </Helmet>
 		   <div id="topbar" className="d-none d-lg-flex align-items-center fixed-top bg-dark">
 				
 				<div className="container d-flex justify-content-between">
@@ -28,7 +32,7 @@ const nav  = useRef(null);
 			<header id="header" className="fixed-top"> 
 					<nav className="navbar navbar-expand-lg py-3" ref={nav}>
 					  <div className="container">
-					    <Link className="navbar-brand" to="/">{ data.logo ?  data.logo : ''}</Link>
+					    <Link className="navbar-brand" to="/"><img src={`http://localhost:5000/${data.logo}`} className='img-fluid' alt="" /></Link>
 					    <button className="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 					      <span className="navbar-toggler-icon"></span>
 					    </button>

@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
-function Opening({title,position}) {
+function Opening({title,position,link}) {
 
 	return (
 		<div className="row border-bottom m-auto mb-3">
@@ -13,7 +13,7 @@ function Opening({title,position}) {
 				</div>
 			</div>
 			<div className="col-lg-6 col text-end">
-			<Link to={`/career/${title.replace(/ /g,"_")}`}>
+			<Link to={`/career/${link}`}>
 					<button className="btn">See More</button>
 				</Link>
 			</div>

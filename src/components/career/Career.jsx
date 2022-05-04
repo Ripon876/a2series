@@ -41,10 +41,10 @@ function Career() {
 
 
            <div className="openings py-5">
-           	    <h1 className="pb-4">{data?.openingsTitle ? data.openingsTitle : ''}</h1>
+           	    <h1 className="pb-4">CURRENT OPENINGS</h1>
 {data.openings?.map((opening) => 
 
-	<Opening title={opening.title}  position={opening.designation}/>
+	<Opening title={opening.title}  position={opening.designation} link={opening.link}/>
 
 )}
 			

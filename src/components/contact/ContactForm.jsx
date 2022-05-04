@@ -78,8 +78,7 @@ console.log(data)
     var {isError,...formData} = data;
     axios.post(`${process.env.REACT_APP_SITE_HOST}/api/contact`,formData)
     .then((res) => {
-    	// console.log(res.data)
-
+ 
   if(res.status === 200 && res.data.success === true){
   	setMsg(res.data.msg);
   	setData(initialData)

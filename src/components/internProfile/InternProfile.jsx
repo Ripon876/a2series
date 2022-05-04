@@ -44,7 +44,7 @@ function InternProfile() {
 					</div>
 				</div>
 				<div className="internWorks text-center py-5">
-					<h1>AKKAS'S All WORKS</h1>
+					<h1>{ data?.name ?  data.name.toUpperCase() : ''}'S  WORKS</h1>
 					<Works projects={data?.projects}/>
 				</div>
 			</div>

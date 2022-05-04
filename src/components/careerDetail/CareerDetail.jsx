@@ -45,7 +45,7 @@ function CareerDetail() {
 {data?.form_link ? 
 <a href={data.form_link} className="text-decoration-none" target="_blank">Apply Now</a>
   : 
-<Link to='/career/apply' className="text-decoration-none">Apply Now</Link>
+<Link to={`/career/apply?${window.location.href.split("/").pop()}`} className="text-decoration-none">Apply Now</Link>
 }
 
 

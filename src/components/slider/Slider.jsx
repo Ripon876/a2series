@@ -34,10 +34,10 @@ function Slider() {
 
 	return (
 		<div className="slider">
-			<Carousel auto loop={true} widgets={[IndicatorDots]}  >
+			<Carousel auto loop={true} widgets={[IndicatorDots]}  axis={slider?.axis} interval={slider.slide_duration}>
 				{slider.slides?.map((slide) => 
 
-				<Slide   title={slide.title} sif={slide.show_img_first ? true : false} para={slide.description} img={slide.img}   />
+				<Slide  title={slide.title} sif={slide.show_img_first ? true : false} para={slide.description} img={slide.img} color={slide.color}  />
 
 				     
 				)}

@@ -82,7 +82,7 @@ input{
 	}
 
     .sliderImg {
-        width: 55%;
+        width: 55% !important;
         margin: auto;
     }
     .sliderInfo{

@@ -9,11 +9,10 @@ function Works({projects}) {
 		<div className="Works py-4">
 			<div className="row justify-content-center">
 
-				{projects?.map((project) => 
+				{projects?.map((projectUrl) => 
 
 					<div className="col-lg-4 px-2 pb-3">
-						<img src={`https://api.site-shot.com/?url=${project.url}&userkey=IAAIEYKBJANTHZ6IA2EGC7G5XJ`} alt={project.title} className='img-fluid' />
-						<p>{project.title}</p>
+						<img src={`https://api.site-shot.com/?url=${projectUrl}&userkey=IAAIEYKBJANTHZ6IA2EGC7G5XJ`}  className='img-fluid projectPreview' />
 					</div>
 
 				)}

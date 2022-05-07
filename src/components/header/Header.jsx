@@ -48,6 +48,9 @@ const nav  = useRef(null);
 					          <Link className="nav-link" to="/services">Services</Link>
 					        </li>
 					        <li className="nav-item">
+					          <Link className="nav-link" to="/team">Our Team</Link>
+					        </li>
+					        <li className="nav-item">
 					          <Link className="nav-link" to="/career">Career</Link>
 					        </li>
 					        <li className="nav-item">

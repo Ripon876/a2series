@@ -9,7 +9,7 @@ import InternsPage from "./pages/Interns";
 import InternProfilePage from "./pages/InternProfile";
 import ContactPage from "./pages/Contact";
 import JoiningForm from "./pages/JoiningForm";
-
+import Team from "./pages/Team";
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
   <Routes>
        <Route path="/" element={<Home />} />
        <Route path="/about" element={<AboutUsPage />} />
+       <Route path="/team" element={<Team />} />
        <Route path="/services" element={<ServicesPage />} />
        <Route path="/career" element={<CareerPage />} />
        <Route path="/career/:title" element={<CareerDetailPage />} />

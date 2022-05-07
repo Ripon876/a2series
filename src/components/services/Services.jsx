@@ -30,13 +30,6 @@ function Services({home}) {
 
 
 
-
-
-
-
-
-
-
 	return (
 		
 		<div className="services" id="services">

@@ -7,7 +7,9 @@ import Interns from '../components/interns/Interns';
 
 function   InternsPage() {
 
-
+// id_rsa
+// eUX8DS1i}?yF
+// 9TcilrjDi8FZ
 
 
  const [data, setData] = useState([]);
@@ -21,7 +23,7 @@ function   InternsPage() {
 
  }, [])
 
-
+document.title =  `${data?.logo ? data.logo.split('/').reverse()[0].split('.')[0] : ''} | Interns `;
 
 
 

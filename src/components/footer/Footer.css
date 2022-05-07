@@ -23,11 +23,12 @@
 }
 
 .footer-container .btn.btn-tertiary {
-  background-color: #e42c64;
-  color: #fff;
-  border-radius: 30px;
-  border: none;
-  padding: 10px 20px; 
+    background-color: #edda40;
+    border: none;
+    border-radius: 30px;
+    color: #0e141e;
+    font-weight: bold;
+    padding: 10px 20px;
 }
 
 .footer-container .social li {

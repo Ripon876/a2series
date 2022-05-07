@@ -22,7 +22,7 @@ function   ContactPage() {
 
  }, [])
 
-
+document.title = data?.logo ? data.logo.split('/').reverse()[0].split('.')[0] : '' + " | Contact";
 
 
 

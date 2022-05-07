@@ -1,6 +1,5 @@
 .services{
 	padding: 100px 40px 70px 40px;
-	/*height: 100vh;*/
 	background: #f5f7fb;
 }
 
@@ -58,10 +57,7 @@
 
 @media (max-width: 992px) { 
 
-	.services{
-		/*height: 985px;*/
-		/*background: red ;*/
-	}
+	
 .serviceInfo h2{
 	font-size: 35px;
 }
@@ -74,10 +70,6 @@
 }
 @media (max-width: 768px) { 
 
-	.services{
-		/*height: 1540px;*/
-		/*background: blue;*/
-	}
  .serviceInfo{
  	position: relative;
  }
@@ -85,10 +77,7 @@
 }
 @media (max-width: 460px) { 
 
-	.services{
-		/*height: 1655px;*/
-		/*background: orange;*/
-	}
+	
 	.serviceRow{
     grid-template-columns: 70%;
 }
@@ -97,21 +86,9 @@
 
 @media (max-width: 400px) { 
 
-	.services{
-		/*height: 1750px;*/
-		/*background: yellow;*/
-	}
+	
 	.serviceRow{
     grid-template-columns: 70%;
 }
-
-}
-@media (max-width: 355px) { 
-
-	.services{
-		/*height: 2250px;*/
-		/*background: green;*/
-	}
-	
 
 }

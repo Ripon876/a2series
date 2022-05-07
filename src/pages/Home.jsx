@@ -13,11 +13,14 @@ import Footer from '../components/footer/Footer';
 
 
 
+function getFaviconEl() {
+  return document.getElementById("favicon");
+}
 
 function Home() {
 
-
-
+    const favicon = getFaviconEl(); 
+    favicon.href = "http://localhost:5000/uploads/A2series.png";  
  const [data, setData] = useState([]);
 
  useEffect(() => {
@@ -29,6 +32,8 @@ function Home() {
 
  }, [])
 
+
+document.title =  `${data?.logo ? data.logo.split('/').reverse()[0].split('.')[0] : ''} | Home `;
 
 	return (
 	<>

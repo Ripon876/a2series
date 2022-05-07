@@ -2,8 +2,7 @@ import React from 'react'
 
 function Works({projects}) {
 
-// console.log(projects)
-// // document.getElementsByClassName("btn-primary")[0].click()
+	
 	return (
        
 		<div className="Works py-4">

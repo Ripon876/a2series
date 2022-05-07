@@ -18,7 +18,6 @@ const styles = {
     bottom: '0',
     font: '16px/30px sans-serif',
     color: 'rgba(255,255,255,0.8)'
-    // backgroundColor : "red"
   },
   left: {
     left: '0'

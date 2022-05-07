@@ -17,7 +17,7 @@ const [data, setData] = useState([]);
        })
 
  }, [])
-
+document.title =  `${data?.logo ? data.logo.split('/').reverse()[0].split('.')[0] : ''} | Apply Now `;
 	return (
 		<>
 			<Header data={data} />

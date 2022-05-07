@@ -19,8 +19,6 @@ function WhoWeAre() {
 
 
 
-
-
 	return (
 		<div className="whoWeAre">
 			<div className="whoWeAreHeader text-center pt-4">

@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Slide({title,para,img,sif,color}) {
-	console.log(color)
+
 	return (
 			<div className="position-relative sliderItem" > 
 				   <div className="container sliderInfoContainer">

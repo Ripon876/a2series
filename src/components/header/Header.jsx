@@ -32,7 +32,7 @@ const nav  = useRef(null);
 			<header id="header" className="fixed-top"> 
 					<nav className="navbar navbar-expand-lg py-3" ref={nav}>
 					  <div className="container">
-					    <Link className="navbar-brand" to="/"><img src={`http://localhost:5000/${data.logo}`} className='img-fluid' alt="" /></Link>
+					    <Link className="navbar-brand ps-2" to="/"><img src={data?.logo} className='img-fluid' alt="" /></Link>
 					    <button className="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 					      <span className="navbar-toggler-icon"></span>
 					    </button>

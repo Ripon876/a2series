@@ -69,11 +69,7 @@ function handleSubmit(e){
  e.preventDefault();
 
     if (checkForm(data)) {
-        console.log("valid");
 
-
-
-console.log(data)
 
     var {isError,...formData} = data;
     axios.post(`${process.env.REACT_APP_SITE_HOST}/api/contact`,formData)
@@ -86,12 +82,10 @@ console.log(data)
 
     })
 
+ 
 
 
-
-    } else {
-        console.log("Form is invalid!");
-    }
+    }  
 }
 
 

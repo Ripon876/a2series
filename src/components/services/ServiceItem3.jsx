@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-// col-lg-3 col-md-6 col-sm-10 p-3 p-lg-2
 
 
 function ServiceItem3({title,para,last,imgSrc}) {

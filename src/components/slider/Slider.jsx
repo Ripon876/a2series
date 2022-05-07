@@ -25,13 +25,6 @@ function Slider() {
 
 
 
-
-
-
-
-
- var sample_para = 'Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh.'
-
 	return (
 		<div className="slider">
 			<Carousel auto loop={true} widgets={[IndicatorDots]}  axis={slider?.axis} interval={slider.slide_duration}>

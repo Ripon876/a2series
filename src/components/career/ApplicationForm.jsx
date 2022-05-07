@@ -29,7 +29,7 @@ function handleSubmit(e){
 	        setShowMsg(true)
 	    })
 	    .catch(error => {
-	        console.log(error);
+	        alert("something went wrong")
 	    });
 
 	}
@@ -93,4 +93,4 @@ function handleSubmit(e){
 	)
 }
 
-export default ApplicationForm
+export default ApplicationForm;

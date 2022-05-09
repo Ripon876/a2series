@@ -24,10 +24,7 @@ function About() {
 
 
 
-
-
-
-
+ 
 
 	return (
 		<Fade>
@@ -47,7 +44,7 @@ function About() {
                         <div className="col-lg-6 pt-5">
                         <div className="aboutInfo">
                         	<h1>Hi!,</h1>
-                        	<p><Markup markup={data?.long_descrition ? data.long_descrition : ""} /></p>
+                        	<p><Markup markup={data?.long_descrition ? data.long_descrition.substr(0,data?.long_descrition.lastIndexOf("<p")) : ""} /></p>
                         </div>
                         </div>
 					</div>

@@ -2,11 +2,10 @@ import React,{useEffect,useState} from 'react';
 import axios from 'axios';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
-import OurTeam from "../components/team/OurTeam";
+import Service from '../components/service/Service';
+ 
 
-
-
-function   Team() {
+function ServicePage() {
 
 
 
@@ -22,15 +21,16 @@ function   Team() {
 
  }, [])
 
-document.title =  `${data?.logo ? data.logo.split('/').reverse()[0].split('.')[0] : ''} | Our Team `;
+document.title = data?.logo ? data.logo.split('/').reverse()[0].split('.')[0] : '' + " | Service";
+
 
 	return (
 		<>
-			<Header data={data} />
-		    <OurTeam />
-			<Footer  data={data} />
+		<Header data={data} />
+		    <Service />
+		<Footer  data={data} />
 		</>
 	)
 }
 
-export default  Team;
+export default  ServicePage;

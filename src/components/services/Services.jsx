@@ -42,7 +42,7 @@ function Services({home}) {
 					<div className="row justify-content-center">
 						{data.services?.map((service) => 
 
-						<ServiceItem4 title={service.title}  imgSrc={service.img}  para={service.description} scf={service.show_content_first} />
+						<ServiceItem4 service={service} />
 
 						)}
 					</div>

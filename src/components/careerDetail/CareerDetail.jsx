@@ -26,8 +26,6 @@ function CareerDetail() {
  }, [])
 
 
-
-
 	return (
 		<div className="careerDetail">
 		<div className="container">
@@ -35,10 +33,11 @@ function CareerDetail() {
 				<h1>{data?.title ? data.title : ''}</h1>
 				<p>{data?.designation ? data.designation : ''}</p>
 			</div>	
-       
+     
 
           <div className="openingRequirments">
-         		<Markup markup={data?.description} />
+        	<Markup markup={data?.description ? data.description.substr(0,data?.description.lastIndexOf("<p")) : ""} />
+ 
           <div className="text-start w-25 py-4">
         	<button className="btn subBtn ">
 

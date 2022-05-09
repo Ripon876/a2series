@@ -2,6 +2,7 @@ import React from "react";
 import { Routes,Route} from "react-router-dom";
 import Home from "./pages/Home";
 import ServicesPage from "./pages/Services";
+import ServicePage from "./pages/ServicePage";
 import AboutUsPage from "./pages/AboutUs";
 import CareerPage from "./pages/Career";
 import CareerDetailPage from "./pages/CareerDetailPage";
@@ -22,6 +23,7 @@ function App() {
        <Route path="/about" element={<AboutUsPage />} />
        <Route path="/team" element={<Team />} />
        <Route path="/services" element={<ServicesPage />} />
+       <Route path="/services/:serviceName" element={<ServicePage />} />
        <Route path="/career" element={<CareerPage />} />
        <Route path="/career/:title" element={<CareerDetailPage />} />
        <Route path="/career/apply" element={<JoiningForm />} />

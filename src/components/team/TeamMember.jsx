@@ -1,21 +1,19 @@
 import React from 'react'
 
-function TeamMember() {
+function TeamMember({member}) {
+ 
 	return (
-		<div className="col-md-3">
+		<div className="col-lg-3 col-md-5 col-sm-7">
 	        <div className="teamMet">
 	            <div className="teamImg">
-	                <img className="img-fluid" src="https://a2series.com/static/media/team-meet1.8f6e7dc4.jpg" alt="Trainer" />
+	                <img className="img-fluid" src={member.img} alt="Trainer" />
 	            </div>
 	            <div className="team-content pt-2">
-	                <h6 className="name pt-4">Farihan Rahman priom</h6>
-	                <p className="title">Sr Backend Developer</p>
+	                <h6 className="name pt-4">{member.name}</h6>
+	                <p className="title">{member.position}</p>
 	            </div>
 	            <ul className="social">
-	                <li><a href="https://google.com" aria-hidden="true"><i class="fa-brands fa-facebook-f"></i></a></li>
-	                <li><a href="https://facebook.com" aria-hidden="true"><i class="fa-brands fa-twitter"></i></a></li>
-	                <li><a href="https://instagram.com" aria-hidden="true"><i class="fa-brands fa-instagram"></i></a></li>
-	                <li><a href="https://linkedin.com" aria-hidden="true"><i class="fa-brands fa-linkedin-in"></i></a></li>
+	         	   <SocialLinks links={member.social_links} />
 	            </ul>
 	        </div>
         </div>
@@ -23,3 +21,25 @@ function TeamMember() {
 }
 
 export default TeamMember;
+
+
+
+function SocialLinks({links}){
+	
+	return (
+        <div>
+            {links["fb"] !== '' && 
+                <li><a href={links["fb"]}><i className="fa-brands fa-facebook-f"></i></a></li>
+            } 
+            {links["instagram"] !== '' && 
+                <li><a href={links["instagram"]}><i className="fa-brands fa-instagram"></i></a></li>
+            } 
+            {links["twitter"] !== '' && 
+                <li><a href={links["twitter"]}><i className="fa-brands fa-twitter"></i></a></li>
+            }  
+            {links["linkedIn"] !== '' && 
+                <li><a href={links["linkedIn"]}><i className="fa-brands fa-linkedin-in"></i></a></li>
+            } 			
+		</div>
+		)
+}

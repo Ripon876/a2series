@@ -48,7 +48,7 @@ useEffect(() => {
 
 
 
-			 <Markup markup={service?.full_description} />
+			 <Markup markup={service?.full_description ? service.full_description.substr(0,service?.full_description.lastIndexOf("<p")) : ""} />
 			
 			</div>
 		</div>

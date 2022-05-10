@@ -20,10 +20,10 @@ function ServiceItem4({service}) {
             </Fade>
         <div className="col-lg-6 col-md-6 col-sm-10 showDown">
 	        <div className="h-100 position-relative w-100">
-	        	<div className="serviceInfo p-3 ">
+	        	<div className="serviceInfo p-3 center ">
 	        		<h2>{service.title}</h2>
 	        		<p>{service.description}</p>
-                  {service.full_description ? 	<div className={service.show_content_first ? 'text-start' : 'text-end'}><Link to={service.link} className='seeMore'> See More ...</Link></div>   : ''}  	
+                  {service.moreDetails && service.full_description ? 	<div className='text-start' ><Link to={service.link} className='seeMore'> See More ...</Link></div>   : ''}  	
 	                </div>
 	        	</div>   
 	        	

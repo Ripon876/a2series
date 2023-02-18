@@ -13,14 +13,14 @@ import Footer from '../components/footer/Footer';
 
 
 
-function getFaviconEl() {
-  return document.getElementById("favicon");
-}
+// function getFaviconEl() {
+//   return document.getElementById("favicon");
+// }
 
 function Home() {
 
-    const favicon = getFaviconEl(); 
-    favicon.href = "http://localhost:5000/uploads/A2series.png";  
+    // const favicon = getFaviconEl(); 
+    // favicon.href = "http://localhost:5000/uploads/A2series.png";  
  const [data, setData] = useState([]);
 
  useEffect(() => {

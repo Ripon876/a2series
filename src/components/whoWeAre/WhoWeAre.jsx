@@ -31,6 +31,7 @@ function WhoWeAre() {
 			<div className="whoWeAreHeader text-center pt-4">
 				<h1 className="sectionTitle display-4  bold">Who We Are</h1>
 				<p className="sectionPara w-75 m-auto py-2"> <Markup markup={data?.long_descrition ? data.long_descrition.substr(0,data?.long_descrition.lastIndexOf("<p")) : ""} /></p>
+				{/*<p className="sectionPara w-75 m-auto py-2"> <Markup markup={data?.long_descrition ? data.long_descrition : ""} /></p>*/}
 			</div>
 			<div className="container pt-5">
 				<div className="ourQualities py-5">

@@ -11,6 +11,7 @@ import InternProfilePage from "./pages/InternProfile";
 import ContactPage from "./pages/Contact";
 import JoiningForm from "./pages/JoiningForm";
 import Team from "./pages/Team";
+import NotFound from './pages/NotFound';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
        <Route path="/interns" element={<InternsPage />} />
        <Route path="/interns/:id" element={<InternProfilePage />} />
        <Route path="/contact" element={<ContactPage />} />
+       <Route path="*" element={<NotFound /> } />
   </Routes>
 
     </>

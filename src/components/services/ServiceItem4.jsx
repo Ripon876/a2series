@@ -23,7 +23,7 @@ function ServiceItem4({service}) {
 	        	<div className="serviceInfo p-3 center ">
 	        		<h2>{service.title}</h2>
 	        		<p>{service.description}</p>
-                  {service.moreDetails && service.full_description ? 	<div className='text-start' ><Link to={service.link} className='seeMore'> See More ...</Link></div>   : ''}  	
+                  {service.moreDetails && service.full_description ? 	<div className='text-start' ><Link to={`/services/${service.link}`} className='seeMore'> See More ...</Link></div>   : ''}  	
 	                </div>
 	        	</div>   
 	        	
